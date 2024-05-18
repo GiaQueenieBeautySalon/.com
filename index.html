@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIAQUEENIE BEAUTY SALON</title>
+    <!-- Include Montserrat font from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-size: 14px; /* Reduced font size */
+        }
+        header img {
+            width: 80px; /* Reduced image size */
+            height: auto;
+            margin-right: 5px; /* Reduced margin */
+        }
+        nav {
+            background-color: #444;
+            padding: 5px; /* Reduced padding */
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px; /* Reduced padding */
+            display: inline-block;
+            transition: transform 0.3s ease;
+            font-size: 12px; /* Reduced font size */
+        }
+        /* Hover effect for navigation links */
+        nav a:hover {
+            transform: translateY(-2px);
+        }
+        .container {
+            margin: 10px auto; /* Reduced margin */
+            max-width: 600px; /* Reduced max-width */
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 3px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            text-align: center;
+            font-size: 20px; /* Reduced font size */
+        }
+        .service img {
+            max-width: 90%; /* Reduced image size */
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        /* Hover effect for service images */
+        .service img:hover {
+            transform: scale(1.05);
+        }
+        .service-description {
+            text-align: center;
+            font-size: 12px; /* Reduced font size */
+            padding: 0 5px;
+        }
+        .homepage {
+            text-align: center;
+            padding: 30px 0; /* Reduced padding */
+        }
+        .hero-content h2 {
+            font-size: 1.8em; /* Adjusted font size */
+            margin-bottom: 15px; /* Reduced margin */
+        }
+        .hero-content p {
+            font-size: 1em; /* Adjusted font size */
+            margin-bottom: 30px; /* Reduced margin */
+        }
+        .btn {
+            padding: 8px 15px; /* Reduced padding */
+            font-size: 12px; /* Reduced font size */
+            display: inline-block;
+            background-color: #fff;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #ddd;
+        }
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #000; /* Change text color to black */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Styles for mobile view */
+        @media only screen and (max-width: 600px) {
+            header img {
+                width: 50px; /* Reduced image size for mobile */
+            }
+            nav {
+                padding: 5px; /* Reduced padding for mobile */
+            }
+            nav a {
+                padding: 10px 15px; /* Adjusted padding for mobile */
+                font-size: 12px; /* Reduced font size for mobile */
+            }
+            .container {
+                padding: 5px; /* Reduced padding for mobile */
+                max-width: 90%; /* Adjusted max-width for mobile */
+            }
+            .hero-content h2 {
+                font-size: 1.5em; /* Adjusted font size for mobile */
+                margin-bottom: 10px; /* Reduced margin for mobile */
+            }
+            .hero-content p {
+                font-size: 0.9em; /* Adjusted font size for mobile */
+                margin-bottom: 20px; /* Reduced margin for mobile */
+            }
+            .btn {
+                padding: 8px 12px; /* Reduced padding for mobile */
+                font-size: 12px; /* Reduced font size for mobile */
+            }
+        }
+      /* Blinking animation */
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+   
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.postimg.cc/K8tmrcGb/beauty-salon3.jpg" alt="GIAQUEENIE Beauty Salon Logo">
+      
+        <h1>GIAQUEENIE BEAUTY SALON</h1>
+    </header>
+    <nav>
+        <a href="#" id="home-link">Home</a>
+        <a href="#" id="services-link">Services</a>
+        <a href="#" id="about-link">About</a>
+      <a href="#" id="vip-link" class="blink">VIP Service</a> 
+       <a href="#" id="vip-link"></a>
+    </nav>
+    <div class="container">
+        <section id="homepage" class="homepage fade-in">
+            <div class="hero" style="background-image: url('https://i.postimg.cc/vTtFZYs0/rosa-rafael-DEuob2v77w-I-unsplash.jpg');">
+                <div class="overlay"></div>
+                <div class="hero-content">
+                    <h2>Welcome to GIAQUEENIE BEAUTY SALON</h2>
+                    <p>Discover the perfect blend of relaxation and beauty treatments.</p>
+                    <a href="mailto:giaqueeniebeautysalon@gmail.com" class="btn">Book Now</a>
+                </div>
+            </div>
+        </section>
+      
+        
+        <section id="services" class="fade-in" style="display: none;">
+            <h2>Our Services</h2>
+            <div class="service">
+                <img src="https://i.postimg.cc/dtGzyPxz/haircut.jpg" alt="Haircut">
+                <div class="service-description">
+                    <h3>Haircut</h3>
+                    <p>Experience a professional haircut tailored to your style.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://i.postimg.cc/qBLYhBgC/braids.jpg" alt="Hairstyle">
+                <div class="service-description">
+                    <h3>Hairstyle</h3>
+                    <p>Elevate your look with our expert hairstyling services.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://i.postimg.cc/FKz0941c/Aromatheraphy.jpg" alt="Aromatherapy">
+                <div class="service-description">
+                    <h3>Aromatherapy</h3>
+                    <p>Relax and rejuvenate with our aromatic essential oils.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://i.postimg.cc/zXPJsYm4/Manicure-and-pedicure.jpg" alt="Manicure">
+                <div class="service-description">
+                    <h3>Manicure</h3>
+                    <p>Pamper your hands with our professional manicure services.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://i.postimg.cc/RVJ8Zk6k/pedicure.jpg" alt="Pedicure">
+                <div class="service-description">
+                    <h3>Pedicure</h3>
+                    <p>Treat your feet to a soothing pedicure experience.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://i.postimg.cc/rpqcmFyn/make-up.jpg" alt="Makeup">
+                <div class="service-description">
+                    <h3>Makeup</h3>
+                    <p>Enhance your beauty with our professional makeup services.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://i.postimg.cc/k5hnpP9T/massages.jpg" alt="Exotic Massage">
+                <div class="service-description">
+                    <h3>Exotic Massages</h3>
+                    <p>Indulge in our exotic massages that transport you to a world of relaxation and rejuvenation.</p>
+                </div>
+            </div>
+        </section>
+      
+
+        <!-- VIP Service section -->
+        <section id="vip" class="fade-in" style="display: none;" >
+          <button id="print-order">Print Order</button>
+ <h2></h2>
+            <div class="service-description">
+                <h3>Book a Home Service</h3>
+                <p>Experience our exclusive VIP home service, where our professionals bring luxury treatments directly to your doorstep.</p>
+            </div>
+            <form id="vip-form" action="https://formspree.io/f/xwkgykyw" method="POST">
+              
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="service">Select Service:</label><br>
+                <select id="service" name="service" required>
+                    <option value="">Select a service...</option>
+                    <option value="Haircut">Haircut</option>
+                    <option value="Hairstyle">Hairstyle</option>
+                    <option value="Aromatherapy">Aromatherapy</option>
+                    <option value="Manicure">Manicure</option>
+                    <option value="Pedicure">Pedicure</option>
+                    <option value="Makeup">Makeup</option>
+                    <option value="Exotic Massages">Exotic Massages</option>
+                    <!-- Add more options as needed -->
+                </select><br><br>
+
+                <label for="message">Additional Services:</label><br>
+                <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="fade-in" style="display: none;">
+            <h2>About GIAQUEENIE BEAUTY SALON</h2>
+            <p>"GIAQUEENIE Beauty Salon," which was founded by Mrs. Gianna Lashawn Lynch in 2022, is dedicated to providing the ultimate beauty experience. Our professional team offers a wide range of services to help you look and feel your best. From haircuts and hairstyling to manicures, pedicures, makeup, and exotic massages, we have everything you need to pamper yourself and enhance your natural beauty.</p>
+            <p>With a focus on quality and customer satisfaction, we strive to exceed your expectations with every visit. Whether you're preparing for a special occasion or simply treating yourself to some well-deserved self-care, GIAQUEENIE Beauty Salon is here to make your beauty dreams a reality.</p>
+            <h3>Our Locations:</h3>
+            <ul>
+                <li><strong>Main Branch:</strong> 1230 Schenectady Ave Brooklyn, New York(NY), 11203</li>
+                <li><strong>Secondary Branch:</strong> 4303 Herridge St Houston, Texas(TX), 77022</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p>To Book a session, Contact us: <a href="mailto:giaqueeniebeautysalon@gmail.com">giaqueeniebeautysalon@gmail.com</a></p>
+            <p>CEO: Mrs. Gianna Lashawn Lynch ©2022</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to toggle visibility of content -->
+    <script>
+        // Get references to the links and sections
+        const homeLink = document.getElementById('home-link');
+        const servicesLink = document.getElementById('services-link');
+        const aboutLink = document.getElementById('about-link');
+        const vipLink = document.getElementById('vip-link');
+        const homepageSection = document.getElementById('homepage');
+        const servicesSection = document.getElementById('services');
+        const aboutSection = document.getElementById('about');
+        const vipSection = document.getElementById('vip');
+
+        // Function to show the homepage section
+        function showHomepage() {
+            homepageSection.style.display = 'block';
+            servicesSection.style.display = 'none';
+            aboutSection.style.display = 'none';
+            vipSection.style.display = 'none';
+        }
+
+        // Function to show the services section
+        function showServices() {
+            homepageSection.style.display = 'none';
+            servicesSection.style.display = 'block';
+            aboutSection.style.display = 'none';
+            vipSection.style.display = 'none';
+        }
+
+        // Function to show the about section
+        function showAbout() {
+            homepageSection.style.display = 'none';
+            servicesSection.style.display = 'none';
+            aboutSection.style.display = 'block';
+            vipSection.style.display = 'none';
+        }
+
+        // Function to show the VIP section
+        function showVIP() {
+            homepageSection.style.display = 'none';
+            servicesSection.style.display = 'none';
+            aboutSection.style.display = 'none';
+            vipSection.style.display = 'block';
+        }
+
+        // Add click event listeners to the links
+        homeLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            showHomepage();
+        });
+
+        servicesLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            showServices();
+        });
+
+        aboutLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            showAbout();
+        });
+
+        // Add click event listener to the VIP link
+        vipLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            showVIP();
+        });
+
+        // Show the homepage section by default
+        showHomepage();
+    </script>
+  <script>
+    // Function to handle printing of the order
+    function printorder() {
+        window.print();
+    }
+
+    // Add click event listener to the print button
+    const printButton = document.getElementById('print-order');
+    printButton.addEventListener('click', printorder);
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment Section</title>
+  <style>
+    .comment-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .comment {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    #seeMoreBtn, #seeLessBtn {
+      display: none;
+      margin-top: 10px;
+    }
+
+    #seeMoreBtn.show, #seeLessBtn.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="comment-container">
+    <h2>Comments</h2>
+    <div id="comments"></div>
+    <p>Total Comments: <span id="totalComments"></span></p>
+    <button id="seeMoreBtn">See More</button>
+    <button id="seeLessBtn">See Less</button>
+  </div>
+  <script>
+    const comments = [
+    { name: "Vivian", comment: "Giaqueenie Beauty Salon's attention to cleanliness and hygiene is commendable. I feel safe and comfortable every time I visit." },
+    { name: "James", comment: "The staff at Giaqueenie Beauty Salon are incredibly professional and friendly. I always leave feeling pampered and refreshed." },
+    { name: "Sophia", comment: "I had an amazing experience at Giaqueenie Beauty Salon. The stylists are skilled and really listened to what I wanted. Highly recommend!" },
+    { name: "Alex", comment: "Giaqueenie Beauty Salon never disappoints. Their services are top-notch and the ambiance is perfect for a relaxing time." },
+    { name: "Maria", comment: "I've been a regular at Giaqueenie Beauty Salon for years. Their consistency in delivering excellent service is why I keep coming back." },
+    { name: "Liam", comment: "The attention to detail at Giaqueenie Beauty Salon is exceptional. From the moment you walk in, you are treated like royalty." },
+    { name: "Olivia", comment: "Giaqueenie Beauty Salon is my go-to place for all my beauty needs. The products they use are high-quality and the results are always fantastic." },
+    { name: "Ethan", comment: "I appreciate the relaxing atmosphere at Giaqueenie Beauty Salon. It's a great escape from the hustle and bustle of daily life." },
+    { name: "Emily", comment: "The team at Giaqueenie Beauty Salon is amazing. They are knowledgeable, kind, and make sure you have the best experience possible." },
+    { name: "Benjamin", comment: "Giaqueenie Beauty Salon offers a wide range of services and each one I've tried has been excellent. Highly recommend giving them a try!" },
+    { name: "Charlotte", comment: "I love the cleanliness and organization of Giaqueenie Beauty Salon. It's always a pleasure to spend time there." },
+    { name: "John", comment: "Happy Birthday, Mrs. Gianna Lynch! Wishing you a fantastic day filled with joy and laughter!" },
+    { name: "Ezra", comment: "Giaqueenie Beauty Salon's facials are transformative. My skin has never looked or felt better!" },
+    { name: "Emily", comment: "Warmest birthday wishes to you, Mrs. Gianna Lynch! May this year bring you even more success and happiness." },
+    { name: "David", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another amazing year!" },
+    { name: "Sophia", comment: "Sending you the biggest birthday hugs, Mrs. Gianna Lynch! Your kindness and grace make every day brighter."},
+    { name: "Michael", comment: "Happy Birthday, Mrs. Gianna Lynch! May your day be filled with all the things you love most."},
+    { name: "Olivia", comment: "Wishing you the happiest of birthdays, Mrs. Gianna Lynch! You deserve all the joy in the world."},
+    { name: "William", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Have a wonderful day!"},
+    { name: "Emma", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion for beauty and excellence shines through in everything you do."},
+    { name: "James", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Isabella", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us."},
+    { name: "Daniel", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Ava", comment: "Happy Birthday, Mrs. Gianna Lynch! Thank you for being such an inspiring role model to us all."},
+    { name: "Benjamin", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Charlotte", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Mason", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be as wonderful as you are."},
+    { name: "Amelia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Here's to another fantastic year!"},
+    { name: "Ethan", comment: "Wishing you a day filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Harper", comment: "Happy Birthday, Mrs. Gianna Lynch! May this year be your best one yet, filled with love, joy, and success."},
+    { name: "Alexander", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your vision and passion inspire us all."},
+    { name: "Evelyn", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a fantastic day!"},
+    { name: "Jacob", comment: "Wishing you a birthday filled with happiness and all the things you love, Mrs. Gianna Lynch!"},
+    { name: "Liam", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and guidance are truly appreciated. Have a wonderful day!"},
+    { name: "Abigail", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Ella", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Logan", comment: "Wishing you a day filled with laughter, love, and all your heart desires, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Grace", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Lucas", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Mia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Aiden", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Madison", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Scarlett", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Jackson", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Luna", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Chloe", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Carter", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Lily", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Sebastian", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Zoe", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Grayson", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Riley", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Elijah", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Nora", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Levi", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Hannah", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Mateo", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Penelope", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "William", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Avery", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Ezra", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Nova", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Jack", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Aria", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Matthew", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Violet", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Luke", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Stella", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Jayden", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Sophie", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Julian", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Willow", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Gabriel", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Hazel", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Daniel", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Madeline", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Anthony", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Natalie", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Henry", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Emma", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Owen", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Aubrey", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Thomas", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Nora", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Wyatt", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Quinn", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Theodore", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Leah", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Caleb", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Bella", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Samuel", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Lillian", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Ryan", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Addison", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "David", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Sofia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Christopher", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Elizabeth", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Gabriella", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Alexander", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Luke", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Evelyn", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "William", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Samantha", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Daniel", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Aiden", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Audrey", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Matthew", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Joseph", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Avery", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Liam", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Isabella", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Nicholas", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Charlotte", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Emma", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Logan", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Andrew", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Harper", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "James", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Aria", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "William", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Ella", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Oliver", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Amelia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Ethan", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Abigail", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Alexander", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Sophia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Mason", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Evelyn", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Mia", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Lucas", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Avery", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Harper", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Liam", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Olivia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Noah", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Charlotte", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Emma", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Liam", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Ava", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Sophia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Ethan", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Isabella", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Mason", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Ava", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Ella", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Liam", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Oliver", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Charlotte", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Sophia", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Jackson", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Emily", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Lucas", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Avery", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Olivia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Benjamin", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Chloe", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Alexander", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Lily", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Mason", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Ava", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Ella", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Liam", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Oliver", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Charlotte", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Sophia", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Jackson", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Emily", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Lucas", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Avery", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Olivia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Benjamin", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Chloe", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Alexander", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Lily", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Mason", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Ava", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Ella", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Liam", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Oliver", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Charlotte", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Sophia", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Jackson", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Emily", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Lucas", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Avery", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Olivia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Benjamin", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Chloe", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Alexander", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Lily", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Mason", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Ava", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Ella", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Liam", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Oliver", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Charlotte", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Sophia", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Jackson", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Emily", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Lucas", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Avery", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Olivia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Benjamin", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Chloe", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Alexander", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Lily", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Mason", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Ava", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Ella", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Liam", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Oliver", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Charlotte", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Sophia", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Jackson", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Emily", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Lucas", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Avery", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Olivia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Benjamin", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Chloe", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Alexander", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Lily", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Mason", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Ava", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Ella", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Liam", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Oliver", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Charlotte", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Sophia", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Jackson", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Emily", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Lucas", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Avery", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Olivia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Benjamin", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Chloe", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Alexander", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Lily", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Mason", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Ava", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Ella", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Liam", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Oliver", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Charlotte", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Sophia", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Jackson", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Emily", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Lucas", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Avery", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Olivia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Benjamin", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Chloe", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Alexander", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Lily", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Mason", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Ava", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Ella", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Liam", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Oliver", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Charlotte", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Sophia", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Jackson", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Emily", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Lucas", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Avery", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Olivia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Benjamin", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Chloe", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Alexander", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Lily", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Mason", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Ava", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Ella", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Liam", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Oliver", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Charlotte", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Sophia", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Jackson", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Emily", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Lucas", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Avery", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Olivia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Benjamin", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Chloe", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Alexander", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Lily", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Mason", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Ava", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Ella", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Liam", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Oliver", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Charlotte", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Sophia", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Jackson", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Emily", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Lucas", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Avery", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Olivia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Benjamin", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Chloe", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Alexander", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Lily", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Mason", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Ava", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Ella", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Liam", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Oliver", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Charlotte", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Sophia", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Jackson", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Emily", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Lucas", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Avery", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Olivia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Benjamin", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Chloe", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Alexander", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+    { name: "Lily", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and generosity touch the lives of everyone around you."},
+    { name: "Mason", comment: "Wishing you a birthday filled with love, laughter, and lots of cake, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Ava", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work make the world a better place. Have a wonderful day!"},
+    { name: "Ella", comment: "Warmest birthday wishes to a remarkable woman, Mrs. Gianna Lynch! May your day be filled with love and joy."},
+    { name: "Liam", comment: "Happy Birthday, Mrs. Gianna Lynch! Your passion and dedication inspire us all. Here's to another amazing year!"},
+    { name: "Oliver", comment: "Wishing you a day filled with happiness and all the things you love, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Charlotte", comment: "Happy Birthday, Mrs. Gianna Lynch! Your kindness and compassion brighten the lives of everyone around you."},
+    { name: "Sophia", comment: "Warmest birthday wishes to an incredible leader, Mrs. Gianna Lynch! May your day be as amazing as you are."},
+    { name: "Jackson", comment: "Happy Birthday, Mrs. Gianna Lynch! Your dedication and hard work inspire us all. Wishing you a fantastic day!"},
+    { name: "Emily", comment: "Wishing you a birthday filled with love, laughter, and all the happiness in the world, Mrs. Gianna Lynch!"},
+    { name: "Lucas", comment: "Happy Birthday, Mrs. Gianna Lynch! Your strength and resilience inspire us all. Have a wonderful day!"},
+    { name: "Avery", comment: "Warmest birthday wishes to an amazing CEO, Mrs. Gianna Lynch! May your day be filled with joy and laughter."},
+    { name: "Olivia", comment: "Happy Birthday, Mrs. Gianna Lynch! Your leadership and vision inspire us all. Here's to another fantastic year!"},
+    { name: "Benjamin", comment: "Wishing you a day as special as you are, Mrs. Gianna Lynch! Happy Birthday!"},
+    { name: "Chloe", comment: "Happy Birthday, Mrs. Gianna Lynch! Your creativity and innovation continue to amaze us. Have a fantastic day!"},
+    { name: "Alexander", comment: "Warmest birthday wishes to an extraordinary leader, Mrs. Gianna Lynch! Your passion and dedication inspire us all."},
+      { name: "Jackie", comment: "Giaqueenie Beauty Salon never fails to impress me. Their attention to detail and customer service are unmatched." },
+      { name: "Kaleb", comment: "I've been a loyal customer of Giaqueenie Beauty Salon for years, and I'm continually amazed by their talent and professionalism." },
+      { name: "Layla", comment: "The moment you step into Giaqueenie Beauty Salon, you're greeted with warmth and hospitality. It's like visiting old friends." },
+      { name: "Max", comment: "Giaqueenie Beauty Salon's commitment to using eco-friendly products is admirable. It's great to support a business that cares about the environment." },
+      { name: "Nora", comment: "I always leave Giaqueenie Beauty Salon feeling like a million bucks. Their treatments are not only effective but also luxurious." },
+      { name: "Oscar", comment: "Giaqueenie Beauty Salon's VIP home service is a game-changer for me. It's the ultimate indulgence and convenience rolled into one." },
+      { name: "Penelope", comment: "I recommend Giaqueenie Beauty Salon to anyone looking for a top-notch salon experience. Their expertise and attention to detail are truly impressive." },
+      { name: "Quincy", comment: "Giaqueenie Beauty Salon's range of services is outstanding. Whether you need a haircut, massage, or facial, they've got you covered." },
+      { name: "Riley", comment: "Giaqueenie Beauty Salon's staff are not only talented professionals but also friendly and approachable. It's always a pleasure to visit." },
+      { name: "Samantha", comment: "I've tried many salons in the past, but Giaqueenie Beauty Salon is in a league of its own. Their commitment to excellence is unmatched." },
+      { name: "Zoe", comment: "Giaqueenie Beauty Salon is a gem! Their attention to detail and friendly staff make every visit a delight." },
+      { name: "Aaron", comment: "I've never been disappointed with Giaqueenie Beauty Salon. Their consistent quality and expertise keep me coming back." },
+      { name: "Brianna", comment: "Giaqueenie Beauty Salon's atmosphere is so inviting and relaxing. It's the perfect escape from the everyday hustle and bustle." },
+      { name: "Caleb", comment: "I trust Giaqueenie Beauty Salon with all my beauty needs. Their professionalism and skill are unmatched." },
+      { name: "Daisy", comment: "Giaqueenie Beauty Salon's range of services is impressive. Whether it's a haircut or a spa treatment, they excel in every area." },
+      { name: "Eliana", comment: "I always leave Giaqueenie Beauty Salon feeling refreshed and rejuvenated. Their treatments are top-notch." },
+      { name: "Felix", comment: "Giaqueenie Beauty Salon's commitment to using high-quality products is commendable. I appreciate their dedication to excellence." },
+      { name: "Gianna", comment: "I've never had a bad experience at Giaqueenie Beauty Salon. Their attention to detail and personalized service make me feel valued as a customer." },
+      { name: "Harrison", comment: "Giaqueenie Beauty Salon's VIP home service is a game-changer. It's convenient, luxurious, and the perfect way to indulge in self-care." },
+      { name: "Isla", comment: "I recommend Giaqueenie Beauty Salon to all my friends and family. Their expertise and professionalism make them the go-to salon in town." },
+      { name: "Xavier", comment: "Giaqueenie Beauty Salon's attention to detail is impeccable. They truly go above and beyond for their clients." },
+      { name: "Yvonne", comment: "I've been a loyal customer of Giaqueenie Beauty Salon for years, and I'm continually impressed by their professionalism and expertise." },
+      { name: "Zachary", comment: "Giaqueenie Beauty Salon's staff are not only talented but also incredibly friendly and welcoming. It's always a pleasure to visit." },
+      { name: "Amara", comment: "I love the luxurious atmosphere at Giaqueenie Beauty Salon. It's the perfect place to relax and unwind." },
+      { name: "Bryson", comment: "Giaqueenie Beauty Salon's range of services is impressive. There's something for everyone, and they always deliver top-notch results." },
+      { name: "Cassandra", comment: "Every time I visit Giaqueenie Beauty Salon, I leave feeling like a new person. Their treatments are both rejuvenating and uplifting." },
+      { name: "Dominic", comment: "Giaqueenie Beauty Salon's commitment to using high-quality products is evident in the results. My hair has never looked better!" },
+      { name: "Elena", comment: "I've tried many salons in the past, but Giaqueenie Beauty Salon is by far the best. Their attention to detail and personalized service set them apart." },
+      { name: "Finnley", comment: "Giaqueenie Beauty Salon's VIP home service is a game-changer. It's convenient, luxurious, and the perfect way to indulge in self-care." },
+      { name: "Giselle", comment: "I recommend Giaqueenie Beauty Salon to all my friends and family. Their expertise and professionalism make them the go-to salon in town." },
+      { name: "Katherine", comment: "Giaqueenie Beauty Salon's attention to detail is unparalleled. Every visit is a delightful experience!" },
+      { name: "Landon", comment: "I've tried many salons, but none compare to Giaqueenie Beauty Salon. Their expertise and professionalism shine through in every service." },
+      { name: "Madeline", comment: "Giaqueenie Beauty Salon's ambiance is so soothing and welcoming. It's like stepping into a sanctuary of relaxation." },
+      { name: "Nathaniel", comment: "Giaqueenie Beauty Salon's commitment to customer satisfaction is exceptional. They always strive to exceed expectations." },
+      { name: "Olivia", comment: "I love how Giaqueenie Beauty Salon stays up-to-date with the latest trends. They always know what's in style." },
+      { name: "Patrick", comment: "Giaqueenie Beauty Salon's attention to detail is remarkable. They take the time to understand my needs and preferences, ensuring the best results every time." },
+      { name: "Quinn", comment: "I'm a regular customer at Giaqueenie Beauty Salon, and I'm continually impressed by their dedication to excellence." },
+      { name: "Rose", comment: "Giaqueenie Beauty Salon's VIP home service is a true luxury. It's like having a spa experience in the comfort of your own home." },
+      { name: "Sebastian", comment: "I can't recommend Giaqueenie Beauty Salon enough. Their professionalism and skill make them the best in the business." },
+      { name: "Tiffany", comment: "Giaqueenie Beauty Salon's commitment to using eco-friendly products is commendable. It's great to support a salon that cares about the environment." },
+      { name: "Ava", comment: "Giaqueenie Beauty Salon's attention to detail is unmatched. I always leave feeling like a superstar!" },
+      { name: "Bentley", comment: "I've been a loyal customer of Giaqueenie Beauty Salon for years, and their consistency is remarkable." },
+      { name: "Charlotte", comment: "Giaqueenie Beauty Salon's staff are not only skilled professionals but also incredibly friendly and welcoming." },
+      { name: "Daniel", comment: "I love the luxurious atmosphere at Giaqueenie Beauty Salon. It's a treat for all the senses." },
+      { name: "Ella", comment: "Giaqueenie Beauty Salon's range of services is impressive. There's something for everyone!" },
+      { name: "Finn", comment: "I always look forward to my appointments at Giaqueenie Beauty Salon. It's my little slice of heaven." },
+      { name: "Gabriella", comment: "Giaqueenie Beauty Salon's commitment to using high-quality products sets them apart from the rest." },
+      { name: "Henry", comment: "The VIP home service from Giaqueenie Beauty Salon is a game-changer. It's so convenient and luxurious!" },
+      { name: "Isabella", comment: "I recommend Giaqueenie Beauty Salon to all my friends and family. Once you experience their service, you'll never go elsewhere." },
+      { name: "Jacob", comment: "Giaqueenie Beauty Salon's dedication to customer satisfaction is evident in every aspect of their service. They always go above and beyond!" },
+      { name: "Sophia", comment: "Giaqueenie Beauty Salon is my go-to place for a confidence boost. Their services never disappoint!" },
+      { name: "Thomas", comment: "I've never had a bad experience at Giaqueenie Beauty Salon. The staff are friendly, and the atmosphere is inviting." },
+      { name: "Uma", comment: "Giaqueenie Beauty Salon's commitment to customer satisfaction is unmatched. They always strive to exceed expectations." },
+      { name: "Vincent", comment: "The quality of service at Giaqueenie Beauty Salon is exceptional. I always leave feeling refreshed and rejuvenated." },
+      { name: "Wendy", comment: "I love how Giaqueenie Beauty Salon keeps up with the latest trends. I always leave feeling like I'm ahead of the curve." },
+      { name: "Xander", comment: "Giaqueenie Beauty Salon's attention to detail is impeccable. They truly care about delivering the best results." },
+      { name: "Yasmine", comment: "Giaqueenie Beauty Salon's VIP home service is a game-changer for me. It's like having a spa come to you!" },
+      { name: "Zachary", comment: "I recommend Giaqueenie Beauty Salon to all my friends and family. Once you experience their service, you'll never look back." },
+      { name: "Amelia", comment: "Giaqueenie Beauty Salon's commitment to using eco-friendly products is something I really admire. It's great to support a salon that cares about the environment." },
+      { name: "Benjamin", comment: "Every visit to Giaqueenie Beauty Salon is a treat. Their attention to detail and personalized service make me feel like a VIP." },
+      { name: "Ivy", comment: "Giaqueenie Beauty Salon's attention to detail is unmatched. They truly care about every aspect of their service." },
+      { name: "Jason", comment: "Every time I visit Giaqueenie Beauty Salon, I leave feeling like a million bucks. Their expertise is evident in every treatment." },
+      { name: "Kelly", comment: "Giaqueenie Beauty Salon's ambiance is so inviting and relaxing. It's my favorite place to unwind and pamper myself." },
+      { name: "Leo", comment: "I've tried many salons before, but none compare to Giaqueenie Beauty Salon. Their commitment to excellence is commendable." },
+      { name: "Megan", comment: "Giaqueenie Beauty Salon's staff are not only skilled professionals but also incredibly friendly and welcoming." },
+      { name: "Nathan", comment: "I always look forward to my appointments at Giaqueenie Beauty Salon. It's the highlight of my month!" },
+      { name: "Oliver", comment: "Giaqueenie Beauty Salon's range of services is impressive. Whether it's hair, nails, or skincare, they excel in every area." },
+      { name: "Pamela", comment: "Giaqueenie Beauty Salon's dedication to using high-quality products is evident in the results. My skin has never looked better!" },
+      { name: "Quincy", comment: "I've been a loyal customer of Giaqueenie Beauty Salon for years, and I'm continually impressed by their consistency and professionalism." },
+      { name: "Rachel", comment: "Giaqueenie Beauty Salon's VIP home service is a game-changer. It's so convenient and luxurious!" },
+      { name: "Zelda", comment: "Giaqueenie Beauty Salon's commitment to customer satisfaction is unparalleled. They always exceed my expectations!" },
+      { name: "Axel", comment: "I've never felt more pampered than when I'm at Giaqueenie Beauty Salon. It's like stepping into a sanctuary of relaxation." },
+      { name: "Brielle", comment: "Giaqueenie Beauty Salon's stylists have a knack for understanding exactly what I want, even when I'm not sure myself." },
+      { name: "Caden", comment: "The moment you walk into Giaqueenie Beauty Salon, you're greeted with warmth and hospitality. It's a truly welcoming environment." },
+      { name: "Dahlia", comment: "Giaqueenie Beauty Salon's commitment to sustainability is commendable. It's refreshing to see a salon prioritize eco-friendly practices." },
+      { name: "Ezra", comment: "Giaqueenie Beauty Salon's facials are transformative. My skin has never looked or felt better!" },
+      { name: "Felicity", comment: "The team at Giaqueenie Beauty Salon are not just professionals, they're artists. Each visit is an opportunity for them to work their magic." },
+      { name: "Gideon", comment: "Giaqueenie Beauty Salon's attention to detail sets them apart. They truly care about making every aspect of your experience exceptional." },
+      { name: "Harper", comment: "I'm constantly recommending Giaqueenie Beauty Salon to everyone I know. Once you experience their service, you'll never want to go anywhere else." },
+      { name: "Isabelle", comment: "Giaqueenie Beauty Salon's commitment to continuous improvement is inspiring. They're always finding new ways to elevate the salon experience." },
+      { name: "Remy", comment: "Giaqueenie Beauty Salon's attention to detail is simply impeccable. They never miss a beat!" },
+      { name: "Sasha", comment: "Every time I leave Giaqueenie Beauty Salon, I feel like I'm walking on clouds. Their massages are heavenly!" },
+      { name: "Thea", comment: "Giaqueenie Beauty Salon's commitment to customer satisfaction is unmatched. They always go the extra mile." },
+      { name: "Ulysses", comment: "I've tried many salons, but none compare to Giaqueenie Beauty Salon. They set the bar high!" },
+      { name: "Vivian", comment: "Giaqueenie Beauty Salon's attention to cleanliness and hygiene is commendable. I feel safe and comfortable every time I visit." },
+      { name: "Winston", comment: "Giaqueenie Beauty Salon's staff not only make you look good on the outside but also feel good on the inside. Their positivity is infectious!" },
+      { name: "Xena", comment: "I've been a loyal customer of Giaqueenie Beauty Salon for years, and I have no plans of going anywhere else. They're simply the best!" },
+      { name: "Yvette", comment: "Giaqueenie Beauty Salon's expertise in haircare is unmatched. They know exactly how to bring out the best in your hair." },
+      { name: "Zephyr", comment: "Giaqueenie Beauty Salon's commitment to using high-quality products is evident in the results. My skin has never looked better!" },
+      { name: "Atlas", comment: "I always look forward to my appointments at Giaqueenie Beauty Salon. It's my little slice of heaven in the midst of a busy week." },
+      { name: "Hazel", comment: "Giaqueenie Beauty Salon's attention to detail is unmatched. Every visit is a delight!" },
+      { name: "Ian", comment: "The staff at Giaqueenie Beauty Salon are not only skilled but also incredibly friendly. It's always a pleasure to visit." },
+      { name: "Jade", comment: "I've been to many salons, but Giaqueenie Beauty Salon stands out for its exceptional service and results." },
+      { name: "Kai", comment: "Giaqueenie Beauty Salon's commitment to using environmentally friendly products is admirable." },
+      { name: "Luna", comment: "From the moment you walk in, you're greeted with warmth and professionalism at Giaqueenie Beauty Salon." },
+      { name: "Milo", comment: "Giaqueenie Beauty Salon's dedication to continuous improvement is evident in the quality of their services." },
+      { name: "Nina", comment: "I love how Giaqueenie Beauty Salon keeps up with the latest trends while maintaining a timeless elegance." },
+      { name: "Owen", comment: "Giaqueenie Beauty Salon's stylists have an innate talent for understanding their clients' needs and preferences." },
+      { name: "Piper", comment: "Giaqueenie Beauty Salon's relaxing ambiance makes it the perfect escape from the hustle and bustle of everyday life." },
+      { name: "Quincy", comment: "Whether it's a haircut, a manicure, or a facial, Giaqueenie Beauty Salon always delivers excellence." },
+      { name: "Zachary", comment: "Giaqueenie Beauty Salon's customer service is second to none. They truly go above and beyond." },
+      { name: "Amy", comment: "I've been a loyal customer of Giaqueenie Beauty Salon for years, and I've never been disappointed." },
+      { name: "Brandon", comment: "The professionalism of the staff at Giaqueenie Beauty Salon is commendable." },
+      { name: "Cynthia", comment: "Giaqueenie Beauty Salon's commitment to using natural and organic products is a big plus for me." },
+      { name: "Derek", comment: "I always feel like a VIP when I visit Giaqueenie Beauty Salon. The personalized service is unmatched." },
+      { name: "Eleanor", comment: "Giaqueenie Beauty Salon's dedication to client satisfaction is evident in every aspect of their service." },
+      { name: "Felix", comment: "I'm constantly impressed by the innovation and creativity at Giaqueenie Beauty Salon." },
+      { name: "Giselle", comment: "Giaqueenie Beauty Salon's attention to detail sets them apart from other salons." },
+      { name: "Hector", comment: "The convenience of booking appointments online with Giaqueenie Beauty Salon makes my life so much easier." },
+      { name: "Isla", comment: "I recommend Giaqueenie Beauty Salon to all my friends and family. They never disappoint!" },
+      { name: "Violet", comment: "Giaqueenie Beauty Salon's hairstylists are true artists!" },
+      { name: "Wesley", comment: "I always leave Giaqueenie Beauty Salon feeling like a million bucks." },
+      { name: "Xander", comment: "Giaqueenie Beauty Salon's attention to customer satisfaction is unmatched." },
+      { name: "Yvonne", comment: "I've never had a bad experience at Giaqueenie Beauty Salon. They're consistently excellent." },
+      { name: "Zane", comment: "The atmosphere at Giaqueenie Beauty Salon is so inviting and relaxing." },
+      { name: "Abigail", comment: "I love that Giaqueenie Beauty Salon uses eco-friendly products." },
+      { name: "Benjamin", comment: "Giaqueenie Beauty Salon's commitment to quality shines through in every service." },
+      { name: "Chloe", comment: "I always look forward to my appointments at Giaqueenie Beauty Salon. It's my little slice of paradise." },
+      { name: "Dylan", comment: "Giaqueenie Beauty Salon's loyalty program makes me feel appreciated as a customer." },
+      { name: "Eva", comment: "I can't imagine going anywhere else for my beauty needs. Giaqueenie Beauty Salon is simply the best." },
+      { name: "Lily", comment: "Giaqueenie Beauty Salon's attention to detail is impeccable!" },
+      { name: "Max", comment: "I'm always amazed by the expertise of the stylists at Giaqueenie Beauty Salon." },
+      { name: "Nora", comment: "Giaqueenie Beauty Salon's facials leave my skin glowing for days." },
+      { name: "Oscar", comment: "I can't get enough of Giaqueenie Beauty Salon's relaxing massages." },
+      { name: "Penny", comment: "The products used at Giaqueenie Beauty Salon are gentle and effective." },
+      { name: "Quincy", comment: "Giaqueenie Beauty Salon's manicures are works of art!" },
+      { name: "Riley", comment: "I feel like royalty every time I step into Giaqueenie Beauty Salon." },
+      { name: "Samantha", comment: "Giaqueenie Beauty Salon's customer care goes above and beyond." },
+      { name: "Theo", comment: "I'm always recommending Giaqueenie Beauty Salon to everyone I know!" },
+      { name: "Uma", comment: "Giaqueenie Beauty Salon's attention to cleanliness is outstanding." }, 
+      { name: "Alice", comment: "Giaqueenie Beauty Salon is amazing! Their services are top-notch." },
+      { name: "Bob", comment: "I had such a wonderful experience at Giaqueenie Beauty Salon. Highly recommended!" },
+      { name: "Charlie", comment: "The staff at Giaqueenie Beauty Salon are so friendly and professional." },
+      { name: "David", comment: "I always leave Giaqueenie Beauty Salon feeling refreshed and rejuvenated." },
+      { name: "Emma", comment: "The VIP home service feature from Giaqueenie Beauty Salon is a game-changer!" },
+      { name: "Frank", comment: "I love that Giaqueenie Beauty Salon offers VIP home service now. So convenient!" },
+      { name: "Grace", comment: "Giaqueenie Beauty Salon's VIP home service is perfect for busy individuals like me." },
+      { name: "Henry", comment: "I tried Giaqueenie Beauty Salon's VIP home service and it exceeded my expectations." },
+      { name: "Ivy", comment: "With Giaqueenie Beauty Salon's VIP home service, I can enjoy salon-quality treatments from the comfort of my home." },
+      { name: "Jack", comment: "Thank you Giaqueenie Beauty Salon for bringing your exceptional services to my doorstep with VIP home service!" },
+      // Add more comments here...
+      { name: "Kate", comment: "Giaqueenie Beauty Salon has the best hair stylists in town!" },
+      { name: "Liam", comment: "I'm impressed by the range of services offered by Giaqueenie Beauty Salon." },
+      { name: "Mia", comment: "Every visit to Giaqueenie Beauty Salon feels like a pampering session." },
+      { name: "Noah", comment: "I recommend Giaqueenie Beauty Salon to all my friends and family." },
+      { name: "Olivia", comment: "The ambiance at Giaqueenie Beauty Salon is so relaxing." },
+      { name: "Paul", comment: "I'm a regular customer at Giaqueenie Beauty Salon, and I'm always satisfied with their services." },
+      { name: "Quinn", comment: "Giaqueenie Beauty Salon never disappoints, whether it's for a haircut or a massage." },
+      { name: "Rachel", comment: "The staff at Giaqueenie Beauty Salon are attentive and skilled." },
+      { name: "Sam", comment: "I feel like a new person after each visit to Giaqueenie Beauty Salon." },
+      { name: "Taylor", comment: "I can't wait to try out Giaqueenie Beauty Salon's new skincare treatments!" },
+      // Add more comments here...
+      { name: "Victoria", comment: "Giaqueenie Beauty Salon's customer service is outstanding." },
+      { name: "William", comment: "I appreciate the attention to detail at Giaqueenie Beauty Salon." },
+      { name: "Xavier", comment: "The prices at Giaqueenie Beauty Salon are reasonable for the quality of service." },
+      { name: "Yara", comment: "I love the selection of products available at Giaqueenie Beauty Salon." },
+      { name: "Zara", comment: "The stylists at Giaqueenie Beauty Salon are highly skilled and knowledgeable." },
+      { name: "Adam", comment: "Giaqueenie Beauty Salon always exceeds my expectations." },
+      { name: "Bella", comment: "I'm a loyal customer of Giaqueenie Beauty Salon because of their consistent quality." },
+      { name: "Chris", comment: "I trust Giaqueenie Beauty Salon with all my beauty needs." },
+      { name: "Diana", comment: "Giaqueenie Beauty Salon is my go-to place for relaxation and self-care." },
+      { name: "Eric", comment: "I recommend Giaqueenie Beauty Salon to anyone looking for a great salon experience." },
+      // Add more comments here...
+      { name: "Fiona", comment: "Giaqueenie Beauty Salon's new hairstylist is incredibly talented!" },
+      { name: "George", comment: "I love the atmosphere at Giaqueenie Beauty Salon. It's always so welcoming." },
+      { name: "Hannah", comment: "The products used at Giaqueenie Beauty Salon are high-quality and gentle on the skin." },
+      { name: "Isaac", comment: "I've been going to Giaqueenie Beauty Salon for years, and I've never been disappointed." },
+      { name: "Jasmine", comment: "I feel like a VIP every time I visit Giaqueenie Beauty Salon." },
+      // Add more comments here...
+    ];
+
+    const commentsContainer = document.getElementById("comments");
+    const totalCommentsSpan = document.getElementById("totalComments");
+    const seeMoreBtn = document.getElementById("seeMoreBtn");
+    const seeLessBtn = document.getElementById("seeLessBtn");
+
+    let currentIndex = 0;
+    const increment = 5;
+
+    function displayComments() {
+      commentsContainer.innerHTML = "";
+      for (let i = currentIndex; i < Math.min(currentIndex + increment, comments.length); i++) {
+        const commentDiv = document.createElement("div");
+        commentDiv.classList.add("comment");
+        commentDiv.textContent = `${comments[i].name}: ${comments[i].comment}`;
+        commentsContainer.appendChild(commentDiv);
+      }
+
+      if (currentIndex + increment < comments.length) {
+        seeMoreBtn.classList.add("show");
+      } else {
+        seeMoreBtn.classList.remove("show");
+      }
+
+      if (currentIndex > 0) {
+        seeLessBtn.classList.add("show");
+      } else {
+        seeLessBtn.classList.remove("show");
+      }
+      totalCommentsSpan.textContent = comments.length; // Update total comments count
+    }
+
+    seeMoreBtn.addEventListener("click", () => {
+      currentIndex += increment;
+      displayComments();
+    });
+
+    seeLessBtn.addEventListener("click", () => {
+      currentIndex -= increment;
+      displayComments();
+    });
+
+    displayComments();
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Comment Section</h2>
+    <form id="contactForm" action="https://formspree.io/f/xwkgykyw" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="message">Leave comment:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
